@@ -1,17 +1,18 @@
+// Execution_Context
 function a(){
     b()
     console.log("Hello Programmer A")
 }
 function b(){
-    c()
+    d()
     console.log("Hello Programmer B")
 }
 function c(){
-    d()
+    
     console.log("Hello Programmer C")
 }
 function d(){
-
+    c()
     console.log("Hello Programmer D")
 }
 function e(){
@@ -20,6 +21,4 @@ function e(){
 }
 var x=100
 a()
-console.log(
-"I am a Programmer"
-)
+console.log("I am a Global Function")
