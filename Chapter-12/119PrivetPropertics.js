@@ -1,3 +1,7 @@
+// একজন User কে কিছূ ডাটা  দেওয়া আর কিছূ ডাটা Hide করার জন্য Absturction ব্যবহার করা হয় ।
+
+
+
 var  Rectangle=function(width,height){
    var position={
       x:56,
