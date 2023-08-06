@@ -3,6 +3,7 @@
 
 
 var  Rectangle=function(width,height){
+   
    var position={
       x:56,
       y:100
