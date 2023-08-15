@@ -22,3 +22,5 @@ var  Rectangle=function(width,height){
    }
    var rec7=new Rectangle(45,46)
    rec7.draw()
+   // rec7.PrintProPerties()
+   
