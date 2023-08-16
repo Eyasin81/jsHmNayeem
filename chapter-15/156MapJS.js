@@ -7,8 +7,7 @@ var myMap=new Map();
 myMap.set("key1","bangladesh");
 myMap.set("key2","India");
 myMap.set("key3","Pakistan");
-console.log(myMap);
-
+// console.log(myMap);
 //Rule-1: delete()  ব্যবহার করে কোন একটা key delete করে দেওয়া ।
 // myMap.delete("key1");
 // console.log(myMap)
@@ -30,3 +29,7 @@ console.log(myMap);
 // }else(
 //     console.log("NO! Key is not Here")
 // )
+for(let [k,v] of myMap){
+   console.log(k);// output key1 kye2 key3
+   console.log(v);
+}/// output bangladesh India Pakistan
