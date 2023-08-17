@@ -1,10 +1,25 @@
-let weakSet=new WeakMap()
-let e1={ename1:"karim"}
-let e2={ename2:"Raihan"}
-let e3={ename3:"Rana"}
-let e4={ename4:"Roni"}
-weakSet.set(e1)
-weakSet.set(e2)
-weakSet.set(e3)
-weakSet.set(e4)
-console.log(weakSet);
+// Creating a WeakMap
+const weakMap = new WeakMap();
+
+// Creating objects to use as keys
+const key1 = {};
+const key2 = {};
+
+// Adding entries to the WeakMap
+weakMap.set(key1, 'Value 1');
+weakMap.set(key2, 'Value 2');
+
+// Getting values using keys
+console.log(weakMap.get(key1));  // 'Value 1'
+console.log(weakMap.get(key2));  // 'Value 2'
+
+// Deleting an entry
+weakMap.delete(key1);
+
+// Checking again
+console.log(weakMap.get(key1));  // undefined
+// This will throw an error
+for (const [key, value] of weakMap) {
+   console.log(key, value);
+ }
+ 
