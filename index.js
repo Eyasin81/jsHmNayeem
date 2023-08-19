@@ -1,30 +1,65 @@
-//function
-function function_name(){
-    console.log("Hello Internet")
+let name=Symbol()
+let color=Symbol()
+let make=Symbol()
+let model=Symbol()
+class bike{
+    constructor(name,color,make,model){
+        this[name]=name
+        this[color]=color
+        this[make]=make
+        this[model]=model
+    }
+    draw(){
+        console.log("this is a draw");
+    }
 }
-function_name()
-// return Function
-function function_name1(){
-    return("Hello Internet")
+let Bike=new bike("Bajaj","Black","India","Ak47")
+// property Access 
+console.log(Bike[color]);
+
+
+
+/* 
+chatGpt 
+
+method-1
+
+const privateData = Symbol('privateData');
+
+class MyClass {
+  constructor() {
+    this[privateData] = {}; // Initialize a private data object
+    this[privateData].privateProperty = 42; // Access and modify private data
+  }
+
+  getPrivateProperty() {
+    return this[privateData].privateProperty; // Access private data
+  }
 }
-// var val=function_name()
-// console.log(val)
-///function parameter
-function test1(n1,n2){
-    var val=n1+n2
-    console.log(val)
+
+const myInstance = new MyClass();
+
+console.log(myInstance.privateData); // undefined, cannot access directly
+console.log(myInstance.getPrivateProperty()); // 42, access via a method
+
+
+*/
+
+/* chatGpt 
+
+method-2
+
+class MyClass {
+  #privateProperty = 42;
+
+  getPrivateProperty() {
+    return this.#privateProperty;
+  }
 }
-test1(10,20)
-//default function
-function add(a,b=1){
-    console.log(a+b)
-}
-// add(6)
-// reset function
-function fun1(...parm){
-    console.log(parm.length)
-}
-fun1()
-fun1(1,2)
-fun1(1,2,3)
-fun1(1,2,3,4)
+
+const myInstance = new MyClass();
+
+console.log(myInstance.#privateProperty); // SyntaxError, cannot access directly
+console.log(myInstance.getPrivateProperty()); // 42, access via a method
+
+*/
