@@ -16,10 +16,10 @@ let c1=new Circle(3,"CRUD")
 // console.log(Object.getOwnPropertySymbols(c1));//[Symbol()]
 // console.log(Object.getOwnPropertySymbols(c1)[0]);// Output ==>Symbol()
 
-// let key=(Object.getOwnPropertySymbols(c1)[0]);//
-// console.log(c1[key]); //3
-//access newar
+//access newar first method
 console.log(c1[_radius]);
 console.log(c1[_name]);
 
-
+// Hide Property access  2nd method
+// let key=(Object.getOwnPropertySymbols(c1)[0]);//
+// console.log(c1[key]); //3
