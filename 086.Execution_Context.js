@@ -1,9 +1,28 @@
-/* getAge=(yearOfBirthDay)=>{
-  console.log(new Date().getFullYear()-yearOfBirthDay);
+// 
+function a(){
+    b()
+    console.log("Hello Programmer A")
 }
-getAge(1999) */
-
-
+function b(){
+    d()
+    console.log("Hello Programmer B")
+}
+function c(){
+    
+    console.log("Hello Programmer C")
+}
+function d(){
+    c()
+    console.log("Hello Programmer D")
+}
+function e(){
+    
+    console.log("Hello Programmer E")
+}
+var x=100
+a()
+console.log("I am a Global Function")
+///////////////////////////////////////////
 // গ্লোবাল স্কোপের এক্সিকিউশন কনটেক্স্ট
 var globalVariable = 'I am a global variable';
 
@@ -26,3 +45,4 @@ function outerFunction(outerParam) {
 }
 
 outerFunction('I am an outer parameter');
+/////////////////////////////////////////
