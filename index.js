@@ -1,7 +1,21 @@
-function add(x, y) {
-  var result = x + y;
-  return result;
+// দুটি সাধারণ ফাংশন
+function double(x) {
+  return x * 2;
 }
 
-var sum = add(5, 3);
-console.log(sum); // এটি কনসোলে 8 দেখাবে
+function addOne(x) {
+  return x + 1;
+}
+
+// ফাংশন কম্পোজিশন
+function compose(f, g) {
+  return function (x) {
+    return f(g(x));
+  };
+}
+
+// ফাংশন কম্পোজিশন ব্যবহার
+const doubleAndAddOne = compose(addOne, double);
+
+// এখন doubleAndAddOne ফাংশনটি ব্যবহার করা যাবে
+console.log(doubleAndAddOne(5)); // আউটপুট: 11
