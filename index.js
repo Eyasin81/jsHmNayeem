@@ -1,5 +1,9 @@
-/* getAge=(yearOfBirthDay)=>{
-  console.log(new Date().getFullYear()-yearOfBirthDay);
+//  function declaretion 
+function test(){
+  console.log("I am a New ")
 }
-getAge(1999) */
-
+test()
+let e=function(){
+  console.log("I am a New-2")
+}
+e()
