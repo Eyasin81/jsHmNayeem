@@ -80,4 +80,30 @@ const person = {
  
  console.log(person.firstName); // 'John'
  person.sayHello(); // 'Hello, John Doe'
+//  4. Abstraction সিনট্যাক্স
+
+ // একটি অস্থায়ী গাড়ি ক্লাস
+class Car {
+  constructor(make, model) {
+    this.make = make;
+    this.model = model;
+  }
+
+  start() {
+    console.log('Engine started');
+  }
+
+  stop() {
+    console.log('Engine stopped');
+  }
+}
+
+// একটি গাড়ি ইনস্ট্যান্স তৈরি করুন
+const myCar = new Car('Toyota', 'Camry');
+
+// গাড়ি চালানোর সিনট্যাক্স
+myCar.start(); // 'Engine started'
+
+// এই ব্যবহারকারীগণ জানে গাড়ি চালাতে কী করতে হয়, তারা অ্যাবস্ট্র্যাক্টেড ডিটেইলগুলি নয়
+
  
