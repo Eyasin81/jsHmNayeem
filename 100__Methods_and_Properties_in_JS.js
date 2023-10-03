@@ -23,7 +23,7 @@ const person = {
  const person1 = {
    firstName: 'John',
    lastName: 'Doe',
-   sayHello: function() {
+   sayHello() {
      console.log('Hello, ' + this.firstName + ' ' + this.lastName);
    }
  };
