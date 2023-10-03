@@ -1,2 +1,7 @@
-let a=12;
-console.log(a)
+// objectName.propertyName = propertyValue;
+let person={
+   name:"mdEyasinAli",
+   age:"mdEyasinAli"
+}
+console.log(person.name)
+let 

@@ -1,5 +1,6 @@
 // Properties 
-objectName.propertyName = propertyValue;
+//  method-1 
+// objectName.propertyName = propertyValue;
 const person = {
    firstName: 'John',
    lastName: 'Doe',
@@ -9,11 +10,14 @@ const person = {
  console.log(person.firstName); // 'John'
  console.log(person.lastName);  // 'Doe'
 
-//  Methods (মেথড):
+//  Methods-2 (মেথড):
 
-objectName.methodName = function(parameters) {
+/*
+ objectName.methodName = function(parameters) {
    // মেথডের কোড এখানে
- };
+ }; 
+ 
+ */
  
 
  const person1 = {
