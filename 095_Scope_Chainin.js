@@ -40,3 +40,4 @@ var closureFunc = outer(); // outer ফাংশনটি একটি ফাং
 closureFunc(); // এখন inner ফাংশনটি কল করা হলে x = 10, y = 20, z = 30 হয়
 
 */
+
