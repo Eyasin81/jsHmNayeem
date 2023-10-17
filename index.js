@@ -1,9 +1,12 @@
-// function 
-function person({firstName,lastName}){
-   console.log(`MY Name is$${firstName} ${lastName}`)
+let obj={
+   a:20,
+   b:39,
+   c:"Eyasin"
 }
-let myName={
-   firstName:"Eyaisn",
-   LastName:"Ali"
-}
-console.log(myName)
+console.log(Object.entries(obj))
+const myArray=[
+   ["a","1"],
+   ["b","2"],
+   ["c","3"],
+]
+console.log(Object.fromEntries(myArray))
