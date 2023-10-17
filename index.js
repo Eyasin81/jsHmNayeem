@@ -1,12 +1,24 @@
-let obj={
-   a:20,
-   b:39,
-   c:"Eyasin"
+var myArray=[1,2,3,4,5]
+// function CreateIterator(collection){
+// let i=0
+// return {
+//    next(){
+//    return{
+//       done:i=>collection.length,
+//       value: collection[i++]
+//    }
+//    }
+// }
+// }
+// let iterator=CreateIterator(myArray)
+// console.log(iterator.next());
+// console.log(iterator.next());
+// console.log(iterator.next());
+// console.log(iterator.next());
+// console.log(iterator.next());
+// console.log(iterator.next());
+//for of loop
+for (let v in myArray){
+   console.log(v)
 }
-console.log(Object.entries(obj))
-const myArray=[
-   ["a","1"],
-   ["b","2"],
-   ["c","3"],
-]
-console.log(Object.fromEntries(myArray))
+
