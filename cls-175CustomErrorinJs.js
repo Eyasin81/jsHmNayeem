@@ -11,7 +11,8 @@ try{
    console.log("I am a line 2");
    throw new CustomError("I am Your Custom Error ")
 }catch(e){
-   console.dir(e.message);
+   console.log(e.message);
+   // console.dir(e.message);
 }finally{
    console.log("I am Finally Block");
 }
